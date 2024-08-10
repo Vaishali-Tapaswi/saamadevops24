@@ -1,3 +1,17 @@
+Lab7 - Dashboard -> new items -> demo2 -> free style project 
+               source code - git 
+                        url -> https://github.com/Vaishali-Tapaswi/javademo1
+                        no auth, branch -> main 
+                ->Polling scm -> H/4 * * * * (every four mins)
+                -> build step -> add build step -> execute windows batch command 
+                    dir
+                    set path="c:\Program Files\Java\jdk1.8.0_05\bin"
+                    javac Hello.java 
+                    java Hello
+                -> run 
+                -> check polling logs for git (Not changed / Changed)
+                        build will be invoked for changed
+
 Lab6 - Dashboard -> new items -> demo1 -> free style project 
         -> build step -> add build step -> execute windows batch command 
             dir
