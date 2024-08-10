@@ -1,6 +1,18 @@
+Lab5 -  Dashboard - Manage jenkins -plugins 
+              Available Plugins -> GitHub plugins     -> select and install without restart
+              If error - for offline / connection 
+                     setup proxy -> Dashboard -> Manage Jenkins->Plugins ->advanced setting->HTTP Proxy Configuration
+              check plugins download once again
+                     installed plugins
 Lab4 - https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable
       download jenkins and install 
- 
+       Unlock user
+              open the suggested file, copy paste unique id 
+       stop / start service
+       Login - admin, admin
+
+
+
 Lab3 - https://www.happiestminds.com/whitepapers/devops.pdf
 Lab2 - https://www.openlegacy.com/blog/monolithic-application (Recap)
 Lab1 - Monolith to Microservice 
