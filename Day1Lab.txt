@@ -1,0 +1,18 @@
+Introduction -> 
+      Java / .Net
+
+    	Rich Client / Desktop Applications
+    	
+    	Thin Client/ Web Applications	
+    		Network + Browser 
+    	
+    	Rich Internet Applications (RIA)
+    	
+    Applications -> N - Tier 
+    
+    	3 tier 
+    	Presentation Layer ------------> Business Logic Layer ------> Persistent Layer----->Db 
+    	Servlet/jsp							Beans/EJB					Hibernate
+    	asp/aspx							Remoting					Entity Framework
+
+    https://martinfowler.com/articles/microservices.html
