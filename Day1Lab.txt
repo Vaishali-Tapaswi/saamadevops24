@@ -1,3 +1,27 @@
+Lab6 - Dashboard -> new items -> demo1 -> free style project 
+        -> build step -> add build step -> execute windows batch command 
+            dir
+            cd /saama/jenkins
+            set path="c:\Program Files\Java\jdk1.8.0_05\bin"
+            javac Hello.java 
+            java Hello
+        save, build now -> go to that build and check console output 
+            observe errors, check dashboard icon for 1 out 1 fail
+        to rectify 
+          1. create folder saama/jenkins 
+          2. create Hello.java in the same folder 
+              class Hello
+                {
+                    public static void main(String []args)
+                    {
+                        System.out.println("My First Java Program.");
+                    }
+                };
+         3. save, build, run, check errors and rectify
+    types of errors-
+      1. folder doesnot exist
+      2. javac/java not found (set path to correct version)
+      and every time when you run observe weather on dashboard 
 Lab5 -  Dashboard - Manage jenkins -plugins 
               Available Plugins -> GitHub plugins     -> select and install without restart
               If error - for offline / connection 
