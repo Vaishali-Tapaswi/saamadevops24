@@ -1,3 +1,12 @@
+Lab3 - cmd
+         c:\saama\gitdemo\demo2\tmp>git remote
+                  will show you current entries in remote 
+         c:\saama\gitdemo\demo2\tmp>git remote get-url origin (if origin is listed in above command)
+         c:\saama\gitdemo\demo2\tmp>git remote remove origin (if origin is listed in above command)
+         c:\saama\gitdemo\demo2\tmp>git remote add o1 https://{tokenid}@github.com/Vaishali-Tapaswi/tmp1
+         c:\saama\gitdemo\demo2\tmp>git remote get-url o1 
+         c:\saama\gitdemo\demo2\tmp>git push o1 
+         confirm remote repo updations, check commits and observe times and states of each commit 
 Lab2 - create repo on github 
          create new repo -> tmp1 (copy url -> https://github.com/Vaishali-Tapaswi/tmp1)
               initialize with readme file and create one aa.txt file 
@@ -10,7 +19,7 @@ Lab2 - create repo on github
               observe the folder tmp1(or name of your repo)         
          c:\saama\gitdemo\demo2>cd tmp1
               create a file bb.txt, add, commit 
-         c:\saama\gitdemo\demo2>git push 
+         c:\saama\gitdemo\demo2\tmp>git push 
                      check auth error 
          on github -> browser -> login to github -> settings-> developer setting->
                      create personal token(classic)->
