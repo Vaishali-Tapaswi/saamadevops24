@@ -13,7 +13,6 @@ Lab4 -
          dev1 = c:\saama\gitdemo\demo3\dev1
          dev2 = c:\saama\gitdemo\demo3\dev2
          Dev1 - 
-         	git init 
          	git clone https://github.com/Vaishali-Tapaswi/tmp1
          	cd tmp1
          	create file dev1.py 
@@ -22,7 +21,6 @@ Lab4 -
          	git push o1 
          		-> push successful, observe +1 commits on github 
          Dev2 -
-         	git init 
          	git clone https://github.com/Vaishali-Tapaswi/tmp1
          	cd tmp1	
          	create file dev1.py 
