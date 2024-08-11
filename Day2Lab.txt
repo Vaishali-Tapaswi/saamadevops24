@@ -1,3 +1,22 @@
+Lab2 - create repo on github 
+         create new repo -> tmp1 (copy url -> https://github.com/Vaishali-Tapaswi/tmp1)
+              initialize with readme file and create one aa.txt file 
+         create a folder (c:\saama\gitdemo\demo2)
+         cmd>cd c:\saama\gitdemo\demo2
+         c:\saama\gitdemo\demo2>git init 
+                                git pull 
+                            or 
+         c:\saama\gitdemo\demo2>git clone {url}
+              observe the folder tmp1(or name of your repo)         
+         c:\saama\gitdemo\demo2>cd tmp1
+              create a file bb.txt, add, commit 
+         c:\saama\gitdemo\demo2>git push 
+                     check auth error 
+         on github -> browser -> login to github -> settings-> developer setting->
+                     create personal token(classic)->
+                            create new classic, name, allow repo (Select scopes)
+                                   generate -> copy token 
+         
 Lab1 - install git 
        create a folder c:\saama\gitdemo\demo1 
           create a file aa.txt in the same 
