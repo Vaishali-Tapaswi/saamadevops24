@@ -1,5 +1,30 @@
+Lab7 - selenium 
+         pip install selenium 
+         download chrome web driver- https://developer.chrome.com/docs/chromedriver/downloads
+         create  folder and extract webdriver and modify demo1.py (line chrome_driver_path=)
+         create demo1.py
+                  from selenium import webdriver
+                  from selenium.webdriver.chrome.service import Service
+                  from selenium.webdriver.common.by import By
+                  from selenium.webdriver.common.keys import Keys
+                  
+                  # Specify the path to the ChromeDriver executable
+                  chrome_driver_path = '/work/seleniumdrivers/chrome/chromedriver.exe'
+                  
+                  # Set up the Service object
+                  service = Service(chrome_driver_path)
+                  
+                  # Initialize the WebDriver with the Service object
+                  driver = webdriver.Chrome(service=service)
+                  
+                  # Open Google
+                  driver.get("https://www.google.com")
+                  # Close the browser
+                  driver.quit()
+         python demo1.py
 Lab6 - repeat on command prompt 
-         
+         to create and change branch -> git checkout -b dev1
+
 Lab5 - github
          create two new braches -> dev1 and dev2 
                   modify dev1 -> readme file 
