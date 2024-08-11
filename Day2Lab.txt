@@ -1,0 +1,23 @@
+Lab1 - install git 
+       create a folder c:\saama\gitdemo\demo1 
+          create a file aa.txt in the same 
+       cmd> cd c:\saama\gitdemo\demo1
+           c:\saama\gitdemo\demo1>dir  ( confirm aa.txt)
+           c:\saama\gitdemo\demo1>dir /a  ( show all fiels hidden as well)
+           c:\saama\gitdemo\demo1>git init 
+           c:\saama\gitdemo\demo1>dir /a  ( check .git folder) 
+       First commit with aa.txt
+          common command for git -> git show , git status, git log ( will show message that first commit is not done)
+       to shift aa.txt from working area to staging area 
+          c:\saama\gitdemo\demo1>git add aa.txt 
+          modify aa.txt 
+          c:\saama\gitdemo\demo1>git status
+          modifications will be tracked 
+          c:\saama\gitdemo\demo1>git commit -m "first commit"
+          run all info commands (show, status and log)
+          again call add and commit with second commit message 
+          run all info commands (show, status and log)
+      add 2/3 more files and check the messages
+         
+    
+  
