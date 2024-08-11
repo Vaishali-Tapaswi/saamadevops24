@@ -1,3 +1,14 @@
+Lab6 - repeat on command prompt 
+         
+Lab5 - github
+         create two new braches -> dev1 and dev2 
+                  modify dev1 -> readme file 
+                  modify dev2 -> readme file 
+         on top of main branch -> notification about dev1 and dev2 getting modified
+         click on dev1 -> merge request -> create request, complete, delete dev1 brach after successful merge
+         click on dev1 -> merge request -> observe conflict messages 
+                                    ->resolve conflicts , modify readme and complete merge 
+
 Lab4 - 
          dev1 = c:\saama\gitdemo\demo3\dev1
          dev2 = c:\saama\gitdemo\demo3\dev2
