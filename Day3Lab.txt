@@ -1,3 +1,23 @@
+Lab3 - create new project demo2 in saamdemo group
+              create Hello.java 
+                     public class Hello
+                            {
+                                public static void main(String []args)
+                                {
+                                    System.out.println("My First Java Program ");
+                                }
+                            };
+              create new pipeline
+                     modify pipeline to have two stages -> compile and run with 1 job each 
+                     modify default image for java 
+                     in compile -> javac Hello.java , dir, java Hello 
+                     in run ->dir,  java Hello
+              run -> observe errors, run job does not have hello.class
+              Configure Artifact (artifact is child element of job
+                      artifacts:
+                         paths:
+                           - Hello.class  
+              run, observe artifact messages in logs and check artifact download
 Lab2 - Modify and debug pipeline 
        create Hello.py and Hello.java files in repo 
               hello.py
