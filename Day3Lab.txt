@@ -1,3 +1,37 @@
+Lab2 - Modify and debug pipeline 
+       create Hello.py and Hello.java files in repo 
+              hello.py
+                     # This program prints Hello, world!
+                     print('Hello, world!')
+              Hello.java 
+                    public class Hello
+                            {
+                                public static void main(String []args)
+                                {
+                                    System.out.println("My First Java Program ");
+                                }
+                            };
+
+       Modify pipeline to include 
+              python hello.py
+              -> check error and messages 
+       Modify image (default image for all jobs)
+              add following two lines before stages on root level(default)
+       	       default:
+                       image: python
+              observe it will run automatically as soon as file is changes, check messages, observe python code running sucessfully
+       Create two build jobs 1 for python 2 for java 
+       in java job -> write two lines 
+                     javac Hello.java 
+                     java Hello
+       save -> observe errors 
+       Modify image for each job (not default -> delete default configuration for image)
+              buildpy-job:       # This job runs in the build stage, which runs first.
+                stage: build
+                image: 
+                  name: python 
+       and same way change for java build -> image name - openjdk:24-slim-bullseye
+
 Lab1 - login to gitlab (+)
        create new group -> saamademo, private, only for me 
        in that group -> create new project/repository -> blank project 
