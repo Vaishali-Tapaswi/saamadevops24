@@ -1,3 +1,13 @@
+Lab4 - GitLab runner configuration (https://docs.gitlab.com/runner/)
+  Download - https://docs.gitlab.com/runner/install/windows.html 
+  create a folder on c:\gitlab-runner and copy the file
+  Browser -> demo1->settings -> ci/cd- > runners -> copy url and token
+  cmd>  ./gitlab-runner.exe register --url {{url}} --registration-token {{token}}
+    -> shell
+  browser -> proj1-settings -> ci/cd- > runners -> confirm your runner
+  Project demo1 -> Settings -> ci/cd-> runners->disable shared runners
+      run pipeline -> check messages on local machine
+
 Lab3 - create new project demo2 in saamdemo group
               create Hello.java 
                      public class Hello
