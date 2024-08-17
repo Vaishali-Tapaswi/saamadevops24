@@ -1,1 +1,9 @@
-
+Lab1 - login to gitlab (+)
+       create new group -> saamademo, private, only for me 
+       in that group -> create new project/repository -> blank project 
+              demo1 -> initialize repository with a README
+              update aa.txt in demo1 repo 
+       in project demo1 
+          left side menu -> build -> pipelines -> new -> "Hello world" with GitLab CI
+              -> commit-> it will start running pipeline
+              check messages from pipeline -> check stages and messages 
