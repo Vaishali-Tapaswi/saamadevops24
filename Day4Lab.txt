@@ -1,3 +1,5 @@
+Lab4 - aws console -> lambda -> create simple python function and test locally
+         verify - cloud watch logs, iam role created
 Lab3 - create new repo demo3 
                 with Hello.java 
              1. change execution to container - java container 
