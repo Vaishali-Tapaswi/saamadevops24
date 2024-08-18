@@ -1,3 +1,30 @@
+Lab6 - Create an object in s3 bucket 
+	Create bucket - 
+		Bucket name - tmp-01-01-lambda-put
+			enable versioning
+	Lambda 
+		Create function - tmptwo
+  		
+  			import boto3
+  			# Create an S3 client
+  			s3 = boto3.client('s3')
+  
+  			def lambda_handler(event, context):
+  			 bucket_name = event['bucket_name']
+  			 response = s3.put_object(
+  				 Bucket=bucket_name,
+  				 Key='demo1',
+  				 Body='Sample Text demo1',
+  				 ACL='public-read'
+  			 )
+  		  	 return response
+	Run -> by passing {"bucket_name":"tmp-01-01-lambda-put"}
+		observe error
+	bucket -> public -> read/write
+	lambda -role-> attach policy -s3 full accesss
+	
+	Optional -> {"bucket_name":"tmp-01-01-lambda-put"}
+	
 Lab5 - aws console - lambda 
                   import json
          
