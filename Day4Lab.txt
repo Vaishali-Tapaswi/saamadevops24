@@ -1,7 +1,17 @@
+Lab2 - create new repo demo2
+        with readme file 
+        actions -> generate new action (python publish workflow)
+        save (demo2.yaml) -> observe as soon as save/push -> workflow execution starts 
+                delete deployment part and just modify to run python hello.py 
+                save, watch messages and errors 
+        create hello.py with just print message
+        modify installations instructions to to it from requirement.txt 
+        save, watch messages and errors , create requirement.txt 
+
 Lab1 - Create new repo demo1
         with readme file 
         actions -> generate new action (Simple workflow)
-              read the generated files ->   on (hooks), jobs, actions
+              read the generated file ->   on (hooks), jobs, actions
         save (demo1.yaml) -> observe as soon as save/push -> workflow execution starts 
         for single line -> try to add multiple commands 
         check dir 
