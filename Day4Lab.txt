@@ -1,3 +1,23 @@
+Lab5 - aws console - lambda 
+                  import json
+         
+                  def lambda_handler(event, context):
+                      msg = 'Hello {} {}!'.format(event['first_name'], event['last_name'])  
+                       
+                      return { 
+                          'message' : msg
+                      }
+       input 
+         {
+             "first_name": "abc",
+             "last_name": "Smith"
+         }
+         Test -> deploy
+         SQS -> create myqueue
+         Modify IAM - role to include to add SQS and SNS full access
+         Change function to add trigger for SQS-MyQueue
+         check logs 
+
 Lab4 - aws console -> lambda -> create simple python function and test locally
          verify - cloud watch logs, iam role created
 Lab3 - create new repo demo3 
