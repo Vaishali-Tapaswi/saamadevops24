@@ -1,0 +1,11 @@
+Lab1 - Create new repo demo1
+        with readme file 
+        actions -> generate new action (Simple workflow)
+              read the generated files ->   on (hooks), jobs, actions
+        save (demo1.yaml) -> observe as soon as save/push -> workflow execution starts 
+        for single line -> try to add multiple commands 
+        check dir 
+        create a new file and check dir (echo "aa" > aa.txt)
+        watch messages and errors 
+            
+      
