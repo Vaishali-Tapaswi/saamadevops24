@@ -1,3 +1,12 @@
+Lab3 - create new repo demo3 
+                with Hello.java 
+             1. change execution to container - java container 
+             2. javac Hello.java and in other job java Hello 
+                        observe error
+             3. define artifact for Hello.class
+             4. create a variable in workflow 
+             5. print variable using echo command 
+
 Lab2 - create new repo demo2
         with readme file 
         actions -> generate new action (python publish workflow)
