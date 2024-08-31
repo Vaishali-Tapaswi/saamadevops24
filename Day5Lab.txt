@@ -1,3 +1,22 @@
+// Optional Lab for customization of request -
+	Accept input from API gateway as 	
+		{
+		  "$schema": "http://json-schema.org/draft-04/schema#",
+		  "title": "PhotosInputModel",
+		  "type": "object",
+		  "properties":
+		    {
+		      "foldername": { "type": "string" },
+		      "filename": { "type": "string" },
+		      "content": { "type": "string" }
+		    }
+		}
+	In integration request -> create mapping template for application/json as 
+		{  "bucket_name":  $input.json('$.foldername'),
+		      "key": $input.json('$.filename') ,
+		      "body": $input.json('$.content')
+		}
+	so input does not expose internal function details to api gateway users 
 Lab 2 - API gateway
 	Expose tmpthree as API Gateway
 		Console -> Services -> API Gateway
