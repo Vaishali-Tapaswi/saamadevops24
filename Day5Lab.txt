@@ -1,3 +1,24 @@
+Lab3 - create a step function
+	step function -> create state machine -> helloworld workflow->run 
+	edit -> 
+		{
+		  "Comment": "A Hello World example demonstrating various state types of the Amazon States Language. It is composed of flow control states only, so it does not need resources to run.",
+		  "StartAt": "mystart",
+		  "States": {
+		    "mystart": {
+		      "Type": "Pass",
+		      "Next": "myend",
+		      "Result": {
+		        "change": "NewName"
+		      }
+		    },
+		    "myend": {
+		      "Type": "Pass",
+		      "End": true
+		    }
+		  }
+		}
+
 // Optional Lab for customization of request -
 	Accept input from API gateway as 	
 		{
