@@ -1,3 +1,66 @@
+Lab4 - step function -> invoking lambda , helloworld -> choice -> run and see flow 
+	Custom -> create lambda function tmp1 
+	create lambda function - tmp1
+		import json
+		def lambda_handler(event, context):
+		    
+		    msg = 'Hello {} {}!'.format(event['first_name'], event['last_name'])  
+		     
+		    return { 
+		        'message' : msg
+		    }
+	modify step function to invoke lambda 
+	{
+	  "Comment": "A Hello World example demonstrating various state types of the Amazon States Language. It is composed of flow control states only, so it does not need resources to run.",
+	  "StartAt": "mystart",
+	  "States": {
+	    "mystart": {
+	      "Type": "Pass",
+	      "Next": "Choice"
+	    },
+	    "Choice": {
+	      
+	      "Type": "Choice",
+	      "Choices": [
+	        {
+	          "Variable": "$.first_name",
+	          "StringEquals": "vai",
+	          "Next": "myend"
+	        }
+	      ],
+	      "Default": "Lambda Invoke"
+	    },
+	    "Lambda Invoke": {
+	      "Type": "Task",
+	      "Resource": "arn:aws:states:::lambda:invoke",
+	      "OutputPath": "$.Payload",
+	      "Parameters": {
+	        "Payload.$": "$",
+	        "FunctionName": "arn:aws:lambda:us-east-1:992382384006:function:tmpone:$LATEST"
+	      },
+	      "Retry": [
+	        {
+	          "ErrorEquals": [
+	            "Lambda.ServiceException",
+	            "Lambda.AWSLambdaException",
+	            "Lambda.SdkClientException",
+	            "Lambda.TooManyRequestsException"
+	          ],
+	          "IntervalSeconds": 1,
+	          "MaxAttempts": 3,
+	          "BackoffRate": 2
+	        }
+	      ],
+	      "Next": "myend"
+	    },
+	    "myend": {
+	      "Type": "Pass",
+	      "End": true
+	    }
+	  }
+	}
+	watch permisssion error  and modify role to attach lambda execution
+
 Lab3 - create a step function
 	step function -> create state machine -> helloworld workflow->run 
 	edit -> 
