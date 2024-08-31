@@ -1,3 +1,5 @@
+Lab6 - Create a lambda function using cloudformation
+	https://cto.ai/blog/create-a-lambda-function-using-aws-cloudformation/#:~:text=In%20creating%20your%20lambda%20function,GetAtt%20function.
 Lab5 - create s3 bucket using cloud formation
 	cloudFormation -> create -> using "Build from Application Composer"
 		just drag s3 bucket -> create stack -> execute
