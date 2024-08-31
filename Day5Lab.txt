@@ -1,0 +1,29 @@
+Lab1 -  Create an object in s3 bucket using lambda function
+	Create bucket - 
+		Bucket name - tmp-02-02-lambda-put
+			enable versioning, make public with read/write access
+	Lambda 
+		Create function - tmpthree
+  		
+  			import boto3
+  			# Create an S3 client
+  			s3 = boto3.client('s3')
+  
+  			def lambda_handler(event, context):
+  			 bucket_name = event['bucket_name']
+			 key = event['key']
+			 body = event['body']
+  			 response = s3.put_object(
+  				 Bucket=bucket_name,
+  				 Key=key,
+  				 Body=body,
+  				 ACL='public-read'
+  			 )
+  		  	 return response
+	Run -> by passing 
+			{"bucket_name":"tmp-02-02-lambda-put",
+			"key": "demo1.txt",
+			"body":"content for demo1.txt"
+			}
+run -> check errors - modify role, s3 bucket permissions accordingly
+
