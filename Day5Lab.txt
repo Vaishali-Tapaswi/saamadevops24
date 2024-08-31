@@ -1,3 +1,6 @@
+Lab5 - create s3 bucket using cloud formation
+	cloudFormation -> create -> using "Build from Application Composer"
+		just drag s3 bucket -> create stack -> execute
 Lab4 - step function -> invoking lambda , helloworld -> choice -> run and see flow 
 	Custom -> create lambda function tmp1 
 	create lambda function - tmp1
