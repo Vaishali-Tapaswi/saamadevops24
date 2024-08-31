@@ -1,3 +1,46 @@
+Lab 2 - API gateway
+	Expose tmpthree as API Gateway
+		Console -> Services -> API Gateway
+			Create API -> REST API -> build 
+				Choose the protocol
+					REST
+					Create new API -> new API
+					Setting 	name - demo1
+					Endpoint Type - regional
+				
+				Actions
+					new resource
+						Resource Name - tmp3
+						Resource Path - /tmp3
+						create resource
+				Actions (on /tmp3)
+					create method -> post
+						Integration type - lambda
+						Lambda Region - us-east-1
+						Lambda Function - tmp3 (arn)
+						add permission -> ok
+				create model -> bucketdetails
+						{
+						  "$schema": "http://json-schema.org/draft-04/schema#",
+						  "title": "PhotosInputModel",
+						  "type": "object",
+						  "properties":
+							{
+							  "bucket_name": { "type": "string" },
+							  "key": { "type": "string" },
+							  "body": { "type": "string" }
+							}
+						}
+
+				Test 
+					Test-> will invoke your lambda function
+						request body 
+									{"bucket_name":"tmp-02-02-lambda-put",
+										"key": "demo1.txt",
+										"body":"content for demo111111.txt"}
+				Check
+					AWS cloudwatch
+
 Lab1 -  Create an object in s3 bucket using lambda function
 	Create bucket - 
 		Bucket name - tmp-02-02-lambda-put
